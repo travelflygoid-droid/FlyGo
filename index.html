@@ -63,9 +63,7 @@
         <div class="container mx-auto text-center">
             <h3 class="text-2xl md:text-3xl font-extrabold mb-2 text-gray-900">Katalog Promo Travelz <i class="fas fa-tags text-orange-500"></i></h3>
             <p class="text-gray-600 mb-8 border-b-2 border-gold pb-2 inline-block">Cek daftar harga promo terbaru kami!</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" id="gallery">
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" id="gallery"></div>
         </div>
     </section>
 
@@ -106,6 +104,18 @@
                         <i class="fab fa-whatsapp mr-3 text-2xl"></i> KIRIM KE WHATSAPP
                     </button>
                 </form>
+
+                <div class="mt-10 p-6 bg-gray-50 border-l-4 border-gold rounded-r-xl">
+                    <h4 class="font-bold text-gray-900 mb-3 flex items-center italic">
+                        <i class="fas fa-file-contract text-gold mr-2"></i> ᴄᴏɴᴅɪᴛɪᴏɴꜱ Pembelian Ticket
+                    </h4>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Silahkan dilengkapi untuk Format pemesanan Booking tiket diatas, Setelah Itu, Tiket Pesanan Anda Kami Proses <span class="font-bold italic text-blue-600">ʙᴏᴏᴋɪɴɢ</span> yang dimana setelah kami proses, kami akan melampirkanya kepada anda <span class="font-bold text-gray-900">ᴛɪᴄᴋᴇᴛ & ᴋᴏᴅᴇ ʙᴏᴏᴋɪɴɢ ᴛɪᴋᴇᴛɴʏᴀ</span>.
+                    </p>
+                    <p class="text-sm text-gray-700 mt-3 leading-relaxed">
+                        Dan setelah anda menerima & mengecek ticket melalui web Maskapai dan <span class="text-green-600 font-bold">Valid Benar</span>, silahkan melanjutkan pembayaran melalui via bank transfer online semua bank / <span class="font-bold">PT FLYGO.ID & ᴛʀᴀᴠᴇʟ ꜰᴇꜱᴛ</span> sesuai harga promo & discount yang berlaku.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -121,7 +131,6 @@
     </footer>
 
     <script>
-        // Script Galeri
         const gallery = document.getElementById('gallery');
         for (let i = 1; i <= 15; i++) {
             gallery.innerHTML += `
@@ -132,7 +141,6 @@
             `;
         }
 
-        // Script WhatsApp
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const nama = document.getElementById('nama').value;
@@ -146,4 +154,4 @@
         });
     </script>
 </body>
-</html>
+    </html>
