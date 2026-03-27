@@ -31,18 +31,26 @@
     <section class="py-20 px-4 text-white relative flex items-center justify-center min-h-[400px]" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?q=80&w=1920'); background-size: cover; background-position: center;">
         <div class="container mx-auto text-center relative z-10">
             <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-gold italic uppercase">ꜰᴏʀᴍᴀᴛ ʙᴏᴏᴋɪɴɢ ᴛɪᴄᴋᴇᴛ<br>ᴏɴʟɪɴᴇ flyGo.id</h2>
-            <p class="mb-8 opacity-90 text-base md:text-xl max-w-2xl mx-auto">Solusi Tiket Pesawat Online Terpercaya: Harga Terbaik, Proses Cepat, dan Keamanan Terjamin.</p>
+            <p class="mb-8 opacity-90 text-base md:text-xl max-w-2xl mx-auto italic">Solusi Tiket Pesawat Online Terpercaya: Harga Terbaik, Proses Cepat, dan Keamanan Terjamin.</p>
             <a href="#booking" class="bg-gold hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition shadow-xl text-lg inline-block uppercase">
                 Pesan Sekarang
             </a>
         </div>
     </section>
 
+    <section id="promo" class="py-16 bg-gray-50 px-4 text-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold mb-2 text-gray-900 italic uppercase">Katalog Promo <i class="fas fa-tags text-orange-500"></i></h3>
+        <p class="text-gray-600 mb-8 border-b-2 border-gold pb-2 inline-block italic">Cek daftar harga promo terbaru kami!</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" id="gallery">
+            </div>
+    </section>
+
     <section id="booking" class="bg-white py-16 px-4">
         <div class="container mx-auto max-w-3xl">
             <div class="text-center mb-10">
                 <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 italic uppercase">Booking Form flyGo.id</h3>
-                <p class="text-gray-600 mt-2 text-sm md:text-base italic">Silahkan lengkapi data pemesan di bawah ini.</p>
+                <p class="text-gray-600 mt-2 text-sm md:text-base italic">Silahkan lengkapi data pemesan di bawah ini sesuai format.</p>
             </div>
 
             <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl border border-gray-100">
@@ -54,7 +62,7 @@
                         </div>
                         <div>
                             <label class="block text-xs font-bold mb-1 uppercase italic text-gray-700">Tujuan Kota</label>
-                            <input type="text" id="rute_tujuan" placeholder="Contoh: Bali" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
+                            <input type="text" id="rute_tujuan" placeholder="Contoh: Tokyo" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
                         </div>
                     </div>
                     
@@ -72,16 +80,16 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-bold mb-1 uppercase italic text-gray-700">Maskapai</label>
-                            <input type="text" id="maskapai" placeholder="Contoh: Garuda / Promo Terbaik" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
+                            <input type="text" id="maskapai" placeholder="Contoh: ANA / JAL / Business" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
                         </div>
                         <div>
-                            <label class="block text-xs font-bold mb-1 uppercase italic text-gray-700">E-mail / No.Telp Pemesan</label>
-                            <input type="text" id="kontak" placeholder="Isi Email atau No HP" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
+                            <label class="block text-xs font-bold mb-1 uppercase italic text-gray-700">Kontak (E-mail/No.Telp)</label>
+                            <input type="text" id="kontak" placeholder="Isi kontak pemesan" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm" required>
                         </div>
                     </div>
 
                     <div class="border-t border-gray-200 pt-4 mt-4">
-                        <label class="block text-xs font-bold mb-2 uppercase italic text-gray-700 text-center bg-gray-100 py-2 rounded text-blue-600">ꜱɪʟᴀʜᴋᴀɴ ʟᴇɴɢᴋᴀᴘɪ ᴅᴀᴛᴀ ᴘᴇᴍᴇꜱᴀɴ (Gelar NY/NN/MR)</label>
+                        <label class="block text-xs font-bold mb-2 uppercase italic text-gray-700 text-center bg-gray-100 py-2 rounded text-blue-600 tracking-tighter">ꜱɪʟᴀʜᴋᴀɴ ʟᴇɴɢᴋᴀᴘɪ ᴅᴀᴛᴀ ᴘᴇᴍᴇꜱᴀɴ (Gelar NY/NN/MR)</label>
                         <textarea id="data_penumpang" rows="5" placeholder="1. Nama Lengkap: &#10;   Gelar: " class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none text-sm"></textarea>
                     </div>
 
@@ -94,12 +102,10 @@
                     <h4 class="font-bold text-gray-900 mb-3 flex items-center italic text-sm uppercase">
                         <i class="fas fa-file-contract text-gold mr-2"></i> ᴄᴏɴᴅɪᴛɪᴏɴꜱ Pembelian Ticket
                     </h4>
-                    <p class="text-[11px] text-gray-700 leading-relaxed italic">
-                        Silahkan dilengkapi untuk Format pemesanan Booking tiket diatas. Setelah Itu, Tiket Pesanan Anda Kami Proses <span class="font-bold text-blue-600 uppercase">ʙᴏᴏᴋɪɴɢ</span>. Kami akan melampirkanya kepada anda <span class="font-bold">ᴛɪᴄᴋᴇᴛ & ᴋᴏᴅᴇ ʙᴏᴏᴋɪɴɢ</span>.
-                    </p>
-                    <p class="text-[11px] text-gray-700 mt-2 leading-relaxed italic uppercase">
+                    <p class="text-[11px] text-gray-700 leading-relaxed italic uppercase">
                         Silahkan ditunggu Respon balik admin untuk lampiran Internary Perjalanan Anda.
                     </p>
+                    <p class="text-[10px] mt-4 text-gray-400 text-center font-bold">NOTE: Reserved BOOK _Travelfest-2026_</p>
                 </div>
             </div>
         </div>
@@ -111,6 +117,35 @@
     </footer>
 
     <script>
+        // Gallery Generator dengan Bagasi 25kg/40kg
+        const gallery = document.getElementById('gallery');
+        for (let i = 1; i <= 15; i++) {
+            gallery.innerHTML += `
+                <div class="bg-white p-3 rounded-2xl shadow-lg border border-gray-100 promo-card flex flex-col">
+                    <img src="${i}.jpg" alt="Promo ${i}" class="rounded-xl w-full h-auto shadow-sm" onerror="this.parentElement.style.display='none'">
+                    <div class="py-2 text-[10px] text-gray-400 italic">Promo flyGo.id #${i}</div>
+                    
+                    <div class="mt-2 pt-3 border-t border-gray-100 text-left bg-gray-50 p-3 rounded-xl flex-grow">
+                        <h5 class="font-extrabold text-gray-900 text-xs mb-1 uppercase italic tracking-tight">Harga Promo TRAVEL FAIR 2026</h5>
+                        <p class="text-gold text-[10px] font-bold mb-2 uppercase italic">*LOW PRICE & FULL SERVICE*</p>
+                        <p class="text-gray-700 text-[10px] mb-2 font-semibold">PERGI PULANG(PP) Include :</p>
+                        
+                        <ul class="space-y-1 text-[10px] text-gray-600 italic">
+                            <li class="flex items-center"><i class="fas fa-suitcase text-gold mr-1.5 w-3 text-center"></i> Bagasi 25kg (PP Ekonomi)</li>
+                            <li class="flex items-center"><i class="fas fa-suitcase-rolling text-gold mr-1.5 w-3 text-center"></i> Bagasi 40kg (PP Business)</li>
+                            <li class="flex items-center"><i class="fas fa-briefcase text-gold mr-1.5 w-3 text-center"></i> Kabin 7 Kg</li>
+                            <li class="flex items-center"><i class="fas fa-utensils text-gold mr-1.5 w-3 text-center"></i> Meals on board, Airport tax, Dll</li>
+                            <li class="flex items-center"><i class="fas fa-exchange-alt text-gold mr-1.5 w-3 text-center"></i> Reschedule With Charge</li>
+                            <li class="flex items-center text-red-600 font-bold"><i class="fas fa-exclamation-circle mr-1.5 w-3 text-center"></i> Penawaran Ticket Terbatas</li>
+                        </ul>
+                        
+                        <p class="text-center mt-3 text-[10px] font-bold text-gray-800 tracking-wider">_Booking Now - Liburan Nanti_</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // WhatsApp Handler
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const asal = document.getElementById('rute_asal').value;
@@ -121,10 +156,10 @@
             const kontak = document.getElementById('kontak').value;
             const data_p = document.getElementById('data_penumpang').value;
             
-            const teks = `Terima kasih telah Menghubungi _TravelflyGo.id_%0AIni adalah Pesan Otomatis silahkan dilengkapi :%0A%0A- Dari kota mana: ${asal}%0A- Tujuan Kota: ${tujuan}%0A- Tgl Berangkat : ${tgl_p}%0A- Tgl Pulang : ${tgl_pl}%0A- Maskapai: ${maskapai}%0A- Kontak Pemesan: ${kontak}%0A%0A*ꜱɪʟᴀʜᴋᴀɴ ʟᴇɴɢᴋᴀᴘɪ ᴅᴀᴛᴀ ᴘᴇᴍᴇꜱᴀɴ* :%0A${data_p}%0A%0A_Silahkan ditunggu Respon balik admin untuk lampiran Internary Perjalanan Anda._`;
+            const teks = `Terima kasih telah Menghubungi _TravelflyGo.id_%0AIni adalah Pesan Otomatis silahkan dilengkapi :%0A%0A- Dari kota mana: ${asal}%0A- Tujuan Kota: ${tujuan}%0A- Tgl Berangkat : ${tgl_p}%0A- Tgl Pulang : ${tgl_pl}%0A- Maskapai: ${maskapai}%0A- Kontak: ${kontak}%0A%0A*ꜱɪʟᴀʜᴋᴀɴ ʟᴇɴɢᴋᴀᴘɪ ᴅᴀᴛᴀ ᴘᴇᴍᴇꜱᴀɴ* :%0A${data_p}%0A%0A_Silahkan ditunggu Respon balik admin untuk lampiran Internary Perjalanan Anda._`;
             
             window.location.href = `https://wa.me/6282353416376?text=${teks}`;
         });
     </script>
 </body>
-                                </html>
+            </html>
