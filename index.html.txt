@@ -7,157 +7,142 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Aksen Emas menyesuaikan Logo */
-        .bg-gold { bg-color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
         .text-gold { color: #D4AF37; }
         .border-gold { border-color: #D4AF37; }
-        
-        /* Smooth Scroll */
         html { scroll-behavior: smooth; }
+        .promo-card:hover { transform: translateY(-5px); transition: 0.3s; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800">
 
     <nav class="bg-white shadow-md p-3 sticky top-0 z-50 border-b-2 border-gold">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <img src="logo.png" alt="FlyGo.id Logo" class="h-12 w-12 rounded-full border-2 border-gold shadow-md">
-            <h1 class="text-xl md:text-2xl font-bold text-gray-900 ml-3">TRAVELZ <span class="text-gold">FLYGO.ID</span></h1>
-            
-            <a href="https://wa.me/6282353416376" class="bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold flex items-center hover:bg-green-700 transition duration-300 shadow-md">
-                <i class="fab fa-whatsapp mr-2 text-lg"></i> Chat Admin
+            <div class="flex items-center">
+                <img src="logo.png" alt="FlyGo.id Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-gold shadow-sm">
+                <h1 class="text-lg md:text-2xl font-bold text-gray-900 ml-2 md:ml-3">TRAVELZ <span class="text-gold">FLYGO.ID</span></h1>
+            </div>
+            <a href="https://wa.me/6282353416376" class="bg-green-600 text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold flex items-center hover:bg-green-700 transition shadow-md">
+                <i class="fab fa-whatsapp mr-2 text-base"></i> Chat Admin
             </a>
         </div>
     </nav>
 
-    <section class="bg-gray-900 py-16 px-4 text-white relative" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?q=80&w=1920'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-black opacity-60"></div>
-        
+    <section class="py-20 px-4 text-white relative flex items-center justify-center min-h-[400px]" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?q=80&w=1920'); background-size: cover; background-position: center;">
         <div class="container mx-auto text-center relative z-10">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-5 leading-tight text-gold">Pesan Tiket Pesawat<br>Lebih Mudah & Murah</h2>
-            <p class="mb-10 opacity-90 text-lg md:text-xl max-w-2xl mx-auto">Travelz FlyGo.id - Solusi Tiket Pesawat Online Terpercaya: Harga Terbaik, Proses Cepat, dan Keamanan Terjamin.</p>
-            <a href="#booking" class="bg-gold hover:bg-yellow-600 text-gray-900 font-bold py-4 px-10 rounded-full transition duration-300 shadow-2xl text-lg inline-block">
-                PESAN SEKARANG VIA WA
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-gold">Pesan Tiket Pesawat<br>Mudah & Murah</h2>
+            <p class="mb-8 opacity-90 text-base md:text-xl max-w-2xl mx-auto">Solusi Tiket Pesawat Online Terpercaya: Harga Terbaik, Proses Cepat, dan Keamanan Terjamin.</p>
+            <a href="#booking" class="bg-gold hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition shadow-xl text-lg inline-block">
+                PESAN SEKARANG
             </a>
         </div>
     </section>
 
-    <section class="py-16 bg-white border-t border-b border-gray-100">
-        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100 hover:border-gold transition">
-                <div class="text-gold text-4xl mb-3"><i class="fas fa-plane-departure"></i></div>
-                <h4 class="font-bold text-lg mb-1">Harga Kompetitif</h4>
-                <p class="text-sm text-gray-600">Dapatkan penawaran harga tiket pesawat terbaik.</p>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+            <div class="p-4 rounded-xl border border-gray-100 hover:border-gold transition bg-gray-50">
+                <i class="fas fa-plane-departure text-gold text-3xl mb-2"></i>
+                <h4 class="font-bold text-sm md:text-base">Harga Murah</h4>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100 hover:border-gold transition">
-                <div class="text-gold text-4xl mb-3"><i class="fas fa-bolt"></i></div>
-                <h4 class="font-bold text-lg mb-1">Proses Cepat</h4>
-                <p class="text-sm text-gray-600">Pemesanan & konfirmasi tiket instan via WA.</p>
+            <div class="p-4 rounded-xl border border-gray-100 hover:border-gold transition bg-gray-50">
+                <i class="fas fa-bolt text-gold text-3xl mb-2"></i>
+                <h4 class="font-bold text-sm md:text-base">Proses Cepat</h4>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100 hover:border-gold transition">
-                <div class="text-gold text-4xl mb-3"><i class="fas fa-lock"></i></div>
-                <h4 class="font-bold text-lg mb-1">Keamanan Terjamin</h4>
-                <p class="text-sm text-gray-600">Transaksi aman dengan sentuhan personal admin.</p>
+            <div class="p-4 rounded-xl border border-gray-100 hover:border-gold transition bg-gray-50">
+                <i class="fas fa-lock text-gold text-3xl mb-2"></i>
+                <h4 class="font-bold text-sm md:text-base">Aman Terjamin</h4>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100 hover:border-gold transition">
-                <div class="text-gold text-4xl mb-3"><i class="fab fa-whatsapp"></i></div>
-                <h4 class="font-bold text-lg mb-1">Support WA 24 Jam</h4>
-                <p class="text-sm text-gray-600">Admin kami siap membantu Anda kapan saja.</p>
+            <div class="p-4 rounded-xl border border-gray-100 hover:border-gold transition bg-gray-50">
+                <i class="fab fa-whatsapp text-gold text-3xl mb-2"></i>
+                <h4 class="font-bold text-sm md:text-base">Support 24 Jam</h4>
             </div>
-        </section>
+        </div>
+    </section>
 
     <section id="promo" class="py-16 bg-gray-50 px-4">
-    <div class="container mx-auto text-center">
-        <h3 class="text-3xl font-extrabold mb-3 text-gray-900">Katalog Promo Travelz <i class="fas fa-tags text-orange-500"></i></h3>
-        <p class="text-gray-600 mb-10 max-w-xl mx-auto border-b-2 border-gold pb-4 inline-block">Cek daftar harga promo terbaru kami di bawah ini!</p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" id="gallery">
-            </div>
-    </div>
-</section>
-
-<script>
-    const galleryContainer = document.getElementById('gallery');
-    
-    // Loop untuk menampilkan gambar 1.jpg sampai 15.jpg
-    for (let i = 1; i <= 15; i++) {
-        const item = `
-            <div class="bg-white p-2 rounded-xl shadow-md border border-gray-200 hover:scale-105 transition duration-300">
-                <img src="${i}.jpg" alt="Promo FlyGo ${i}" class="rounded-lg w-full h-auto shadow-sm" loading="lazy">
-                <div class="py-2 text-xs text-gray-400 font-semibold italic">Promo #${i}</div>
-            </div>
-        `;
-        galleryContainer.innerHTML += item;
-    }
-</script>
-
-    <section id="booking" class="bg-white py-20 px-4">
         <div class="container mx-auto text-center">
-            <h3 class="text-3xl font-extrabold mb-5 text-gray-900">Formulir Pemesanan Tiket</h3>
-            <p class="text-gray-600 mb-12 max-w-xl mx-auto">Isi data di bawah ini, dan Admin kami akan segera menghubungi Anda di WhatsApp untuk instruksi pembayaran dan E-Tiket.</p>
+            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 text-gray-900">Katalog Promo Travelz <i class="fas fa-tags text-orange-500"></i></h3>
+            <p class="text-gray-600 mb-8 border-b-2 border-gold pb-2 inline-block">Cek daftar harga promo terbaru kami!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" id="gallery">
+                </div>
+        </div>
+    </section>
 
-            <div class="bg-gray-50 p-8 rounded-3xl shadow-lg text-gray-800 max-w-3xl mx-auto border border-gray-100">
-                <form id="bookingForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="md:col-span-2">
-                        <label class="block text-left text-sm font-bold mb-2 text-gray-700">Nama Lengkap (Sesuai KTP)</label>
-                        <input type="text" id="nama" placeholder="Contoh: Budi Santoso" class="w-full border-2 border-gray-200 p-3.5 rounded-xl focus:outline-none focus:border-gold transition" required>
-                    </div>
+    <section id="booking" class="bg-white py-16 px-4">
+        <div class="container mx-auto max-w-3xl">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900">Formulir Pemesanan</h3>
+                <p class="text-gray-600 mt-2 text-sm md:text-base">Isi data, Admin akan segera mengirimkan E-Tiket via WhatsApp.</p>
+            </div>
+
+            <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl border border-gray-100">
+                <form id="bookingForm" class="space-y-5">
                     <div>
-                        <label class="block text-left text-sm font-bold mb-2 text-gray-700">Kota Asal</label>
-                        <input type="text" id="asal" placeholder="Contoh: Jakarta (CGK)" class="w-full border-2 border-gray-200 p-3.5 rounded-xl focus:outline-none focus:border-gold transition" required>
+                        <label class="block text-sm font-bold mb-1 text-gray-700">Nama Lengkap (Sesuai KTP)</label>
+                        <input type="text" id="nama" placeholder="Contoh: Budi Santoso" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none" required>
                     </div>
-                    <div>
-                        <label class="block text-left text-sm font-bold mb-2 text-gray-700">Kota Tujuan</label>
-                        <input type="text" id="tujuan" placeholder="Contoh: Bali (DPS) / Tokyo (HND)" class="w-full border-2 border-gray-200 p-3.5 rounded-xl focus:outline-none focus:border-gold transition" required>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-bold mb-1 text-gray-700">Kota Asal</label>
+                            <input type="text" id="asal" placeholder="Contoh: Jakarta (CGK)" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1 text-gray-700">Kota Tujuan</label>
+                            <input type="text" id="tujuan" placeholder="Contoh: Bali (DPS)" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none" required>
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-left text-sm font-bold mb-2 text-gray-700">Tanggal Berangkat</label>
-                        <input type="date" id="tanggal" class="w-full border-2 border-gray-200 p-3.5 rounded-xl focus:outline-none focus:border-gold transition" required>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-bold mb-1 text-gray-700">Tanggal Berangkat</label>
+                            <input type="date" id="tanggal" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1 text-gray-700">Maskapai</label>
+                            <input type="text" id="maskapai" placeholder="Bebas / Promo Terbaik" class="w-full border-2 border-gray-200 p-3 rounded-xl focus:border-gold outline-none">
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-left text-sm font-bold mb-2 text-gray-700">Maskapai (Opsional)</label>
-                        <input type="text" id="maskapai" placeholder="Contoh: Singapore Airlines / ANA" class="w-full border-2 border-gray-200 p-3.5 rounded-xl focus:outline-none focus:border-gold transition">
-                    </div>
-                    
-                    <div class="md:col-span-2 mt-6">
-                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4.5 rounded-2xl transition duration-300 shadow-lg text-xl flex items-center justify-center">
-                            <i class="fab fa-whatsapp mr-3 text-2xl"></i> KONFIRMASI PEMESANAN VIA WA
-                        </button>
-                    </div>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-2xl transition shadow-lg text-lg flex items-center justify-center mt-6">
+                        <i class="fab fa-whatsapp mr-3 text-2xl"></i> KIRIM KE WHATSAPP
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-300 py-10 px-4 border-t-4 border-gold">
-        <div class="container mx-auto text-center">
-            <h5 class="text-xl font-bold mb-2 text-white">TRAVELZ <span class="text-gold">FLYGO.ID</span></h5>
-            <p class="text-sm mb-6">Solusi Tiket Murah, Cepat & Aman. Hak Cipta &copy; 2024.</p>
-            
-            <div class="text-xs text-gray-500">
-                Pencarian Tiket • Konfirmasi WhatsApp • E-Tiket Langsung
-            </div>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t-4 border-gold text-center">
+        <h5 class="text-xl font-bold text-white mb-2">TRAVELZ <span class="text-gold">FLYGO.ID</span></h5>
+        <p class="text-xs mb-4">Solusi Tiket Murah & Aman. Hak Cipta &copy; 2026.</p>
+        <div class="flex justify-center space-x-4 text-xl">
+            <a href="#" class="hover:text-gold"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gold"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gold"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
 
     <script>
+        // Script Galeri
+        const gallery = document.getElementById('gallery');
+        for (let i = 1; i <= 15; i++) {
+            gallery.innerHTML += `
+                <div class="bg-white p-2 rounded-2xl shadow-sm border border-gray-200 promo-card">
+                    <img src="${i}.jpg" alt="Promo ${i}" class="rounded-xl w-full h-auto shadow-sm" loading="lazy" onerror="this.style.display='none'">
+                    <div class="py-2 text-xs text-gray-400 italic">Promo FlyGo #${i}</div>
+                </div>
+            `;
+        }
+
+        // Script WhatsApp
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Ambil Data dari Form
             const nama = document.getElementById('nama').value;
             const asal = document.getElementById('asal').value;
             const tujuan = document.getElementById('tujuan').value;
             const tanggal = document.getElementById('tanggal').value;
             const maskapai = document.getElementById('maskapai').value || 'Bebas / Promo Terbaik';
             
-            // Nomor WhatsApp Anda: 082353416376 -> format 6282353416376
-            const noWA = "6282353416376"; 
-
-            // Format Pesan Profesional & Rapi
-            const teks = `Halo Travelz FlyGo.id!%0ASaya ingin memesan tiket pesawat dengan data berikut:%0A%0A✈️ *DATA PESANAN* ✈️%0A━━━━━━━━━━━━━━━━━━━%0A👤 *Nama:* ${nama}%0A🛫 *Dari:* ${asal}%0A🛬 *Ke:* ${tujuan}%0A📅 *Tanggal:* ${tanggal}%0A🎫 *Maskapai:* ${maskapai}%0A━━━━━━━━━━━━━━━━━━━%0A%0AMohon info harga terbaik dan instruksi pembayarannya. Terima kasih!`;
-
-            // Redirect ke WhatsApp
-            window.location.href = `https://wa.me/${noWA}?text=${teks}`;
+            const teks = `Halo Travelz FlyGo.id!%0ASaya ingin memesan tiket pesawat:%0A%0A✈️ *DATA PESANAN* ✈️%0A👤 Nama: ${nama}%0A🛫 Dari: ${asal}%0A🛬 Ke: ${tujuan}%0A📅 Tanggal: ${tanggal}%0A🎫 Maskapai: ${maskapai}%0A%0AMohon info harganya. Terima kasih!`;
+            window.location.href = `https://wa.me/6282353416376?text=${teks}`;
         });
     </script>
 </body>
