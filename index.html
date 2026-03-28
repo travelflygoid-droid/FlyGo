@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyGo.id | Premium Travel & Lifestyle</title>
+    <title>Flight Routes | FlyGo.id Official</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,154 +11,108 @@
         body { font-family: 'Montserrat', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
         .font-luxury { font-family: 'Cinzel', serif; }
         .text-gold { color: #d4af37; }
-        .bg-gold { background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #d4af37 100%); }
-        
         .glass-card { 
             background: rgba(255, 255, 255, 0.02); 
             border: 1px solid rgba(212, 175, 55, 0.15); 
             backdrop-filter: blur(15px);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .glass-card:hover { 
-            border-color: #d4af37; 
-            background: rgba(212, 175, 55, 0.05);
-            transform: translateY(-5px);
-        }
-
-        .promo-box {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(20,20,20,0.9));
-            border-left: 2px solid #d4af37;
-        }
-
-        .condition-box {
-            background: rgba(212, 175, 55, 0.05);
-            border: 1px dashed rgba(212, 175, 55, 0.3);
-            border-radius: 20px;
-        }
-
-        input, textarea {
-            background: rgba(255, 255, 255, 0.03) !important;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
-            color: white !important;
-            transition: 0.3s;
-            border-top: 0 !important; border-left: 0 !important; border-right: 0 !important;
-        }
-        input:focus, textarea:focus { border-color: #d4af37 !important; outline: none; }
+        .route-row:hover { background: rgba(212, 175, 55, 0.05); transition: 0.3s; }
     </style>
 </head>
 <body>
 
-    <nav class="p-6 sticky top-0 z-50 bg-black/90 border-b border-white/5 backdrop-blur-xl">
+    <nav class="p-6 border-b border-white/5 bg-black/90 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center space-x-4">
-                <img src="logo.png" alt="Logo" class="h-12 w-12 rounded-full border border-gold shadow-[0_0_15px_rgba(212,175,55,0.3)]">
-                <div>
-                    <h1 class="text-xl font-luxury tracking-[0.3em] leading-none">FLYGO<span class="text-gold">.ID</span></h1>
-                    <p class="text-[8px] tracking-[0.4em] uppercase opacity-50 mt-1 italic text-center w-full block">Premium Travel Partner</p>
-                </div>
-            </div>
-            <a href="https://wa.me/6282353416376" class="bg-gold text-black text-[9px] px-6 py-2.5 rounded-full font-bold shadow-lg uppercase tracking-widest transition">Chat Admin</a>
+            <a href="index.html" class="text-gold text-[10px] tracking-[0.3em] font-bold uppercase"><i class="fas fa-arrow-left mr-2"></i> HOME</a>
+            <h1 class="font-luxury text-lg tracking-[0.2em]">FLYGO<span class="text-gold">.ID</span></h1>
+            <a href="https://wa.me/6282353416376" class="bg-gold text-black text-[9px] px-5 py-2 rounded-full font-bold uppercase tracking-widest">Admin</a>
         </div>
     </nav>
 
-    <section class="py-24 px-6 bg-[#030303]">
-        <div class="container mx-auto">
-            <div class="text-center mb-16">
-                <h3 class="font-luxury text-2xl text-gold mb-4 tracking-[0.4em]">EXQUISITE OFFERS</h3>
-                <p class="text-[9px] opacity-40 tracking-[0.5em] uppercase italic italic">Travel Fair 2026 Special Deals</p>
+    <section class="py-16 text-center">
+        <h2 class="font-luxury text-3xl md:text-5xl mb-4 tracking-[0.3em] uppercase">ꜰʟɪɢʜᴛ ʀᴏᴜᴛᴇꜱ</h2>
+        <p class="text-[9px] text-gold tracking-[0.5em] uppercase italic opacity-70">Travel Fair 2026 Price List</p>
+    </section>
+
+    <section class="pb-24 px-6">
+        <div class="container mx-auto max-w-5xl">
+            
+            <div class="glass-card rounded-[2.5rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-6 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic">ɪɴᴛᴇʀɴᴀᴛɪᴏɴᴀʟ ꜰʟɪɢʜᴛꜱ ᴘʀᴏᴍᴏ</h3>
+                </div>
+
+                <div class="p-6 md:p-10 overflow-x-auto">
+                    <table class="w-full text-left text-[11px] md:text-xs">
+                        <thead>
+                            <tr class="text-gold opacity-60 uppercase tracking-widest border-b border-white/10">
+                                <th class="pb-6 font-light">Destinasi (PP)</th>
+                                <th class="pb-6 font-light text-center">ᴇᴋᴏɴᴏᴍɪ (ɴᴇᴛᴛ)</th>
+                                <th class="pb-6 font-light text-center">ʙᴜꜱɪɴᴇꜱꜱ (ɴᴇᴛᴛ)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Hong Kong</td>
+                                <td class="py-6 text-center opacity-80">IDR 4.500.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 12.800.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Tokyo (Japan)</td>
+                                <td class="py-6 text-center opacity-80">IDR 6.900.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 18.500.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ London (UK)</td>
+                                <td class="py-6 text-center opacity-80">IDR 11.200.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 33.400.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Paris (France)</td>
+                                <td class="py-6 text-center opacity-80">IDR 10.800.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 31.900.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ New York (USA)</td>
+                                <td class="py-6 text-center opacity-80">IDR 14.500.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 39.000.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Sydney (AU)</td>
+                                <td class="py-6 text-center opacity-80">IDR 7.800.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 21.500.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Amsterdam</td>
+                                <td class="py-6 text-center opacity-80">IDR 10.500.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 30.800.000</td>
+                            </tr>
+                            <tr class="route-row">
+                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Seoul (Korea)</td>
+                                <td class="py-6 text-center opacity-80">IDR 5.800.000</td>
+                                <td class="py-6 text-center text-gold font-bold">IDR 16.900.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="p-8 bg-black/40 border-t border-gold/10 text-center">
+                    <p class="text-gold font-bold italic text-[9px] tracking-widest mb-4 uppercase">
+                        - ꜰʟɪɢʜᴛ ɴᴏᴛᴇꜱ & ᴄᴏɴᴅɪᴛɪᴏɴꜱ -
+                    </p>
+                    <p class="text-[10px] leading-relaxed text-gray-400 italic mb-6">
+                        Harga diatas adalah harga <strong>ɴᴇᴛᴛ ᴘᴇʀ-ᴘᴀx</strong> (Pergi Pulang). Sudah termasuk <strong>ꜰᴜʟʟ ꜱᴇʀᴠɪᴄᴇ</strong> (ᴍᴇᴀʟꜱ, ʙᴀɢᴀꜱɪ & ᴛᴀx). Harga sewaktu-waktu dapat berubah mengikuti ketersediaan seat pada sistem <strong>ʙᴏᴏᴋɪɴɢ</strong> Maskapai.
+                    </p>
+                    <a href="https://wa.me/6282353416376" class="inline-block bg-gold text-black px-12 py-3.5 rounded-full font-bold uppercase text-[9px] tracking-[0.3em] shadow-lg">Cek Seat via WA</a>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto" id="gallery_promo"></div>
+
         </div>
     </section>
 
-    <section id="booking" class="py-24 px-6 bg-black">
-        <div class="container mx-auto max-w-4xl">
-            <div class="glass-card p-8 md:p-16 rounded-[3rem] shadow-2xl">
-                <div class="text-center mb-12">
-                    <h3 class="font-luxury text-3xl mb-4 tracking-[0.3em]">RESERVATION</h3>
-                    <div class="h-[1px] w-20 bg-gold mx-auto mb-4 opacity-40"></div>
-                </div>
-
-                <form id="bookingForm" class="space-y-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <input type="text" id="asal" placeholder="DEPARTURE CITY" class="w-full p-4 text-[10px] tracking-widest uppercase">
-                        <input type="text" id="tujuan" placeholder="DESTINATION CITY" class="w-full p-4 text-[10px] tracking-widest uppercase">
-                    </div>
-                    <div class="grid grid-cols-2 gap-10">
-                        <input type="date" id="tgl_pergi" class="w-full p-4 text-[10px] uppercase">
-                        <input type="date" id="tgl_pulang" class="w-full p-4 text-[10px] uppercase">
-                    </div>
-                    <input type="text" id="maskapai" placeholder="PREFERRED AIRLINE" class="w-full p-4 text-[10px] tracking-widest uppercase">
-                    <textarea id="penumpang" rows="3" placeholder="PASSENGER NAMES (TITLE)" class="w-full p-4 text-[10px] tracking-widest uppercase resize-none"></textarea>
-                    
-                    <button type="submit" class="bg-gold text-black w-full py-5 rounded-full font-bold uppercase text-[10px] tracking-[0.4em] shadow-xl hover:scale-[1.01] transition-all">Submit Reservation</button>
-                </form>
-
-                <div class="mt-16 p-8 condition-box text-center">
-                    <p class="text-gold font-bold italic text-xs tracking-widest mb-6 uppercase">
-                        - ᴄᴏɴᴅɪᴛɪᴏɴꜱ pembelian ticket -
-                    </p>
-                    <p class="text-[11px] leading-relaxed text-gray-300 italic opacity-90">
-                        Silahkan dilengkapi untuk Format pemesanan Booking tiket diatas, Setelah Itu, Tiket Pesanan Anda Kami Proses <strong>*ʙᴏᴏᴋɪɴɢ*</strong> yang dimana setelah kami proses, kami akan melampirkannya kepada anda <strong>*ᴛɪᴄᴋᴇᴛ & ᴋᴏᴅᴇ ʙᴏᴏᴋɪɴɢ ᴛɪᴋᴇᴛɴʏᴀ*</strong> dan setelah anda menerima & mengecek ticket melalui web Maskapai dan Valid benar, silahkan melanjutkan pembayaran melalui via bank transfer online semua bank / <strong>PT FLYGO.ID & ᴛʀᴀᴠᴇʟ ꜰᴇꜱᴛ</strong> sesuai harga promo & discount yang berlaku.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-16 bg-black text-center border-t border-white/5">
-        <h4 class="font-luxury text-xl tracking-[0.8em] text-gold mb-6 opacity-80">FLYGO.ID</h4>
-        <p class="text-[8px] opacity-30 uppercase tracking-[0.5em]">&copy; 2026 PT Flygo Indonesia. All Rights Reserved.</p>
+    <footer class="py-12 bg-black text-center opacity-30">
+        <p class="text-[8px] uppercase tracking-[0.5em] font-luxury">PT FLYGO INDONESIA &copy; 2026</p>
     </footer>
 
-    <script>
-        const gallery = document.getElementById('gallery_promo');
-        const listDestinasi = ["Hong Kong", "Tokyo", "London", "Paris", "New York", "Sydney", "Amsterdam", "Vancouver", "Taipei", "Seoul", "Zurich", "Frankfurt", "Milan", "San Francisco", "Dubai"];
-        
-        for (let i = 1; i <= 15; i++) {
-            gallery.innerHTML += `
-                <div class="glass-card p-5 rounded-[2.5rem] flex flex-col group">
-                    <div class="overflow-hidden rounded-[2rem] mb-6 h-56 relative shadow-xl">
-                        <img src="${i}.jpg" alt="${listDestinasi[i-1]}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-1000 ease-out" onerror="this.parentElement.parentElement.style.display='none'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-5 left-5">
-                            <h4 class="font-luxury text-white text-lg tracking-widest uppercase">${listDestinasi[i-1] || 'Promo'}</h4>
-                        </div>
-                    </div>
-                    
-                    <div class="promo-box p-6 rounded-2xl">
-                        <div class="text-center mb-5">
-                            <span class="text-[8px] text-gold font-bold tracking-[0.4em] uppercase block mb-1 opacity-80">Price Offer</span>
-                            <span class="text-[10px] font-semibold tracking-widest italic opacity-90">TRAVEL FAIR 2026</span>
-                        </div>
-                        
-                        <ul class="space-y-2 text-[10px] font-light tracking-wide opacity-80 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-gold mr-3 text-[8px]"></i>Bagasi 1x23kg (PP Ekonomi)</li>
-                            <li class="flex items-center"><i class="fas fa-check text-gold mr-3 text-[8px]"></i>Bagasi 2x23kg (PP Business)</li>
-                            <li class="flex items-center"><i class="fas fa-check text-gold mr-3 text-[8px]"></i>Kabin 7 Kg</li>
-                            <li class="flex items-center"><i class="fas fa-check text-gold mr-3 text-[8px]"></i>Full Meals & Airport Tax</li>
-                            <li class="flex items-center"><i class="fas fa-check text-gold mr-3 text-[8px]"></i>Reschedule With Charge</li>
-                        </ul>
-
-                        <div class="pt-4 border-t border-white/5 text-center">
-                            <p class="text-red-400 text-[8px] font-bold uppercase tracking-widest mb-2 italic">Penawaran Tiket Terbatas</p>
-                            <p class="text-gold font-luxury text-[9px] tracking-[0.3em]">BOOK NOW - LIBURAN NANTI</p>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        document.getElementById('bookingForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const teks = `Halo FlyGo.id, saya ingin reservasi tiket:%0A%0A` +
-                         `- Dari: ${document.getElementById('asal').value}%0A` +
-                         `- Tujuan: ${document.getElementById('tujuan').value}%0A` +
-                         `- Pergi: ${document.getElementById('tgl_pergi').value}%0A` +
-                         `- Maskapai: ${document.getElementById('maskapai').value}%0A` +
-                         `- Penumpang: ${document.getElementById('penumpang').value}`;
-            window.location.href = `https://wa.me/6282353416376?text=${teks}`;
-        });
-    </script>
 </body>
-    </html>
+</html>
