@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Routes | FlyGo.id Official</title>
+    <title>Official Routes | FlyGo.id Travel Fair 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,12 +11,16 @@
         body { font-family: 'Montserrat', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
         .font-luxury { font-family: 'Cinzel', serif; }
         .text-gold { color: #d4af37; }
+        .sc-style { font-variant: small-caps; text-transform: lowercase; }
         .glass-card { 
             background: rgba(255, 255, 255, 0.02); 
             border: 1px solid rgba(212, 175, 55, 0.15); 
             backdrop-filter: blur(15px);
+            margin-bottom: 2rem;
         }
         .route-row:hover { background: rgba(212, 175, 55, 0.05); transition: 0.3s; }
+        th { color: #d4af37; font-weight: 300; text-transform: uppercase; letter-spacing: 0.2em; font-size: 10px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 1rem; }
+        td { padding: 1.2rem 0.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.03); font-size: 11px; }
     </style>
 </head>
 <body>
@@ -30,81 +34,127 @@
     </nav>
 
     <section class="py-16 text-center">
-        <h2 class="font-luxury text-3xl md:text-5xl mb-4 tracking-[0.3em] uppercase">ꜰʟɪɢʜᴛ ʀᴏᴜᴛᴇꜱ</h2>
-        <p class="text-[9px] text-gold tracking-[0.5em] uppercase italic opacity-70">Travel Fair 2026 Price List</p>
+        <h2 class="font-luxury text-3xl md:text-5xl mb-4 tracking-[0.3em] uppercase sc-style">Flight Routes</h2>
+        <p class="text-[9px] text-gold tracking-[0.5em] uppercase italic opacity-70">Travel Fair 2026 Curated Destinations</p>
     </section>
 
     <section class="pb-24 px-6">
         <div class="container mx-auto max-w-5xl">
-            
-            <div class="glass-card rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <div class="bg-gold/10 p-6 border-b border-gold/20 text-center">
-                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic">ɪɴᴛᴇʀɴᴀᴛɪᴏɴᴀʟ ꜰʟɪɢʜᴛꜱ ᴘʀᴏᴍᴏ</h3>
-                </div>
 
-                <div class="p-6 md:p-10 overflow-x-auto">
-                    <table class="w-full text-left text-[11px] md:text-xs">
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-5 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic sc-style">ʀᴜᴛᴇ ᴀꜱɪᴀ</h3>
+                </div>
+                <div class="p-6 md:p-8 overflow-x-auto">
+                    <table class="w-full text-left">
                         <thead>
-                            <tr class="text-gold opacity-60 uppercase tracking-widest border-b border-white/10">
-                                <th class="pb-6 font-light">Destinasi (PP)</th>
-                                <th class="pb-6 font-light text-center">ᴇᴋᴏɴᴏᴍɪ (ɴᴇᴛᴛ)</th>
-                                <th class="pb-6 font-light text-center">ʙᴜꜱɪɴᴇꜱꜱ (ɴᴇᴛᴛ)</th>
+                            <tr>
+                                <th>Destinasi (PP)</th>
+                                <th class="text-center">ᴇᴋᴏɴᴏᴍɪ</th>
+                                <th class="text-center">ʙᴜꜱɪɴᴇꜱꜱ</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-white/5">
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Hong Kong</td>
-                                <td class="py-6 text-center opacity-80">IDR 4.500.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 12.800.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Tokyo (Japan)</td>
-                                <td class="py-6 text-center opacity-80">IDR 6.900.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 18.500.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ London (UK)</td>
-                                <td class="py-6 text-center opacity-80">IDR 11.200.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 33.400.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Paris (France)</td>
-                                <td class="py-6 text-center opacity-80">IDR 10.800.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 31.900.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ New York (USA)</td>
-                                <td class="py-6 text-center opacity-80">IDR 14.500.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 39.000.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Sydney (AU)</td>
-                                <td class="py-6 text-center opacity-80">IDR 7.800.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 21.500.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Amsterdam</td>
-                                <td class="py-6 text-center opacity-80">IDR 10.500.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 30.800.000</td>
-                            </tr>
-                            <tr class="route-row">
-                                <td class="py-6 font-semibold tracking-wide">Jakarta ⇄ Seoul (Korea)</td>
-                                <td class="py-6 text-center opacity-80">IDR 5.800.000</td>
-                                <td class="py-6 text-center text-gold font-bold">IDR 16.900.000</td>
-                            </tr>
+                        <tbody>
+                            <tr class="route-row"><td>Jakarta ⇄ Hong Kong</td><td class="text-center">IDR 4.2jt</td><td class="text-center text-gold font-bold">IDR 12.5jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Tokyo</td><td class="text-center">IDR 6.8jt</td><td class="text-center text-gold font-bold">IDR 18.2jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Seoul</td><td class="text-center">IDR 5.9jt</td><td class="text-center text-gold font-bold">IDR 16.5jt</td></tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
 
-                <div class="p-8 bg-black/40 border-t border-gold/10 text-center">
-                    <p class="text-gold font-bold italic text-[9px] tracking-widest mb-4 uppercase">
-                        - ꜰʟɪɢʜᴛ ɴᴏᴛᴇꜱ & ᴄᴏɴᴅɪᴛɪᴏɴꜱ -
-                    </p>
-                    <p class="text-[10px] leading-relaxed text-gray-400 italic mb-6">
-                        Harga diatas adalah harga <strong>ɴᴇᴛᴛ ᴘᴇʀ-ᴘᴀx</strong> (Pergi Pulang). Sudah termasuk <strong>ꜰᴜʟʟ ꜱᴇʀᴠɪᴄᴇ</strong> (ᴍᴇᴀʟꜱ, ʙᴀɢᴀꜱɪ & ᴛᴀx). Harga sewaktu-waktu dapat berubah mengikuti ketersediaan seat pada sistem <strong>ʙᴏᴏᴋɪɴɢ</strong> Maskapai.
-                    </p>
-                    <a href="https://wa.me/6282353416376" class="inline-block bg-gold text-black px-12 py-3.5 rounded-full font-bold uppercase text-[9px] tracking-[0.3em] shadow-lg">Cek Seat via WA</a>
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-5 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic sc-style">ᴇʀᴏᴘᴀ ʙᴀʀᴀᴛ</h3>
                 </div>
+                <div class="p-6 md:p-8 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr>
+                                <th>Destinasi (PP)</th>
+                                <th class="text-center">ᴇᴋᴏɴᴏᴍɪ</th>
+                                <th class="text-center">ʙᴜꜱɪɴᴇꜱꜱ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="route-row"><td>Jakarta ⇄ London</td><td class="text-center">IDR 11.5jt</td><td class="text-center text-gold font-bold">IDR 32.8jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Paris</td><td class="text-center">IDR 10.9jt</td><td class="text-center text-gold font-bold">IDR 31.5jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Amsterdam</td><td class="text-center">IDR 10.5jt</td><td class="text-center text-gold font-bold">IDR 30.8jt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-5 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic sc-style">ᴇʀᴏᴘᴀ ꜱᴇʟᴀᴛᴀɴ</h3>
+                </div>
+                <div class="p-6 md:p-8 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr>
+                                <th>Destinasi (PP)</th>
+                                <th class="text-center">ᴇᴋᴏɴᴏᴍɪ</th>
+                                <th class="text-center">ʙᴜꜱɪɴᴇꜱꜱ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="route-row"><td>Jakarta ⇄ Milan</td><td class="text-center">IDR 10.2jt</td><td class="text-center text-gold font-bold">IDR 29.5jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Roma</td><td class="text-center">IDR 10.5jt</td><td class="text-center text-gold font-bold">IDR 29.8jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Madrid</td><td class="text-center">IDR 10.8jt</td><td class="text-center text-gold font-bold">IDR 30.2jt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-5 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic sc-style">ᴇʀᴏᴘᴀ ᴛɪᴍᴜʀ</h3>
+                </div>
+                <div class="p-6 md:p-8 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr>
+                                <th>Destinasi (PP)</th>
+                                <th class="text-center">ᴇᴋᴏɴᴏᴍɪ</th>
+                                <th class="text-center">ʙᴜꜱɪɴᴇꜱꜱ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="route-row"><td>Jakarta ⇄ Istanbul</td><td class="text-center">IDR 8.9jt</td><td class="text-center text-gold font-bold">IDR 25.5jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Praha</td><td class="text-center">IDR 11.2jt</td><td class="text-center text-gold font-bold">IDR 31.8jt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+                <div class="bg-gold/10 p-5 border-b border-gold/20 text-center">
+                    <h3 class="font-luxury text-gold tracking-[0.2em] text-sm uppercase italic sc-style">ᴇʀᴏᴘᴀ ᴜᴛᴀʀᴀ</h3>
+                </div>
+                <div class="p-6 md:p-8 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr>
+                                <th>Destinasi (PP)</th>
+                                <th class="text-center">ᴇᴋᴏɴᴏᴍɪ</th>
+                                <th class="text-center">ʙᴜꜱɪɴᴇꜱꜱ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="route-row"><td>Jakarta ⇄ Stockholm</td><td class="text-center">IDR 11.8jt</td><td class="text-center text-gold font-bold">IDR 33.5jt</td></tr>
+                            <tr class="route-row"><td>Jakarta ⇄ Copenhagen</td><td class="text-center">IDR 11.5jt</td><td class="text-center text-gold font-bold">IDR 33.2jt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="p-10 bg-black/40 border border-gold/20 rounded-[2rem] text-center">
+                <p class="text-gold font-bold italic text-[9px] tracking-widest mb-4 uppercase sc-style">- Flight Notes & Conditions -</p>
+                <p class="text-[10px] leading-relaxed text-gray-400 italic mb-8">
+                    Harga diatas adalah harga <strong>nett per-pax</strong> (Pergi Pulang). Sudah termasuk <strong>full service</strong> (meals, bagasi & tax). Harga sewaktu-waktu dapat berubah mengikuti ketersediaan seat pada sistem <strong>booking</strong> Maskapai.
+                </p>
+                <a href="https://wa.me/6282353416376" class="inline-block bg-gold text-black px-12 py-4 rounded-full font-bold uppercase text-[9px] tracking-[0.3em] shadow-xl hover:scale-[1.05] transition-all">Hubungi Konsultan Perjalanan</a>
             </div>
 
         </div>
@@ -115,4 +165,4 @@
     </footer>
 
 </body>
-</html>
+                                                                                                                    </html>
