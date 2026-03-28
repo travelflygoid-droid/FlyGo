@@ -3,120 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyGo.id | Premium Travel & Lifestyle</title>
+    <title>FlyGo.id | Official Booking</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; color: #ffffff; scroll-behavior: smooth; }
-        .font-luxury { font-family: 'Cinzel', serif; }
+        body { font-family: sans-serif; background-color: #0a0a0a; color: #ffffff; scroll-behavior: smooth; }
         .text-gold { color: #c5a059; }
-        .bg-gold { background: linear-gradient(135deg, #c5a059 0%, #ecd299 50%, #c5a059 100%); }
-        
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(197, 160, 89, 0.2);
-            transition: all 0.5s ease;
-        }
-
-        input, textarea {
-            background: rgba(0, 0, 0, 0.3) !important;
-            border: 1px solid rgba(197, 160, 89, 0.3) !important;
-            color: white !important;
-        }
-
-        .gold-button {
-            transition: all 0.4s;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+        .bg-gold { background-color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(197, 160, 89, 0.2); backdrop-filter: blur(10px); }
     </style>
 </head>
 <body>
 
-    <nav class="p-6 sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gold/20 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <div class="flex items-center space-x-4">
-                <img src="logo.png" alt="Logo" class="h-12 w-12 rounded-full border border-gold">
-                <div>
-                    <h1 class="text-xl font-luxury tracking-widest leading-none">FLYGO<span class="text-gold">.ID</span></h1>
-                </div>
+    <nav class="p-4 sticky top-0 z-50 bg-black border-b border-gold/20 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Logo" class="h-10 w-10 rounded-full border border-gold">
+                <span class="font-bold tracking-widest text-lg uppercase">FLYGO<span class="text-gold">.ID</span></span>
             </div>
-            <a href="https://wa.me/6282353416376" class="bg-green-600 text-white text-[10px] font-bold px-5 py-2 rounded-full">CHAT ADMIN</a>
+            <a href="https://wa.me/6282353416376" class="bg-green-600 text-white text-[10px] px-5 py-2 rounded-full font-bold shadow-lg">CHAT ADMIN</a>
         </div>
     </nav>
 
-    <section class="relative h-[80vh] flex items-center justify-center overflow-hidden text-center">
+    <section class="relative h-[70vh] flex items-center justify-center text-center px-6">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-black/70 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1920" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1920" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
         </div>
-        <div class="relative z-20 px-6">
-            <h2 class="font-luxury text-4xl md:text-7xl mb-4 tracking-widest uppercase text-white">
-                FORMAT BOOKING<br>
-                <span class="text-gold">TICKET ONLINE</span>
-            </h2>
-            <div class="h-px w-24 bg-gold mx-auto mb-8"></div>
-            <a href="#booking" class="gold-button bg-gold text-black font-bold py-4 px-12 rounded-full inline-block text-xs">Book Excellence</a>
+        <div class="relative z-10">
+            <h1 class="text-3xl md:text-6xl font-bold mb-4 tracking-tighter uppercase">FORMAT BOOKING TICKET</h1>
+            <p class="text-gold font-bold tracking-[0.3em] mb-8 text-sm md:text-xl uppercase">Travel Fair 2026 Special Offer</p>
+            <a href="#booking" class="bg-gold text-black px-10 py-4 rounded-full font-bold uppercase text-xs shadow-2xl">Pesan Sekarang</a>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-zinc-950 border-t border-gold/10">
+    <section class="py-20 px-6 bg-[#0d0d0d]">
         <div class="container mx-auto">
-            <h3 class="font-luxury text-2xl text-gold text-center mb-12 uppercase tracking-widest">Client Reviews</h3>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold text-gold uppercase tracking-widest mb-2">Eksklusif Promo</h2>
+                <p class="text-[10px] opacity-50 tracking-[0.4em] uppercase">Cathay Pacific & Partner</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto" id="gallery">
+                </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-black border-t border-gold/10">
+        <div class="container mx-auto">
+            <h2 class="text-center text-xl font-bold mb-12 text-gold uppercase tracking-widest">Client Reviews</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="glass-card p-8 rounded-2xl text-center flex flex-col items-center">
-                    <img src="https://i.pravatar.cc/150?u=1" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-xl">
-                    <p class="text-xs italic opacity-80 mb-4">"Pelayanan FlyGo.id sangat profesional. Tiket Business Class saya diurus sangat cepat!"</p>
-                    <h5 class="font-luxury text-gold text-[10px] uppercase">Bpk. Aris - Jakarta</h5>
+                <div class="glass p-8 rounded-2xl text-center flex flex-col items-center">
+                    <img src="https://i.pravatar.cc/150?u=1" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-lg">
+                    <p class="text-xs italic opacity-80 leading-relaxed mb-6">"Pelayanan FlyGo.id sangat profesional. Tiket Business Class Cathay Pacific saya diurus dengan sangat cepat!"</p>
+                    <h5 class="text-gold font-bold text-[10px] tracking-widest uppercase">Bpk. Aris - Jakarta</h5>
                 </div>
-                <div class="glass-card p-8 rounded-2xl text-center flex flex-col items-center">
-                    <img src="https://i.pravatar.cc/150?u=2" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-xl">
-                    <p class="text-xs italic opacity-80 mb-4">"Respon admin sangat membantu, semua data tiket dijelaskan secara detail."</p>
-                    <h5 class="font-luxury text-gold text-[10px] uppercase">Ibu Siska - Surabaya</h5>
+                <div class="glass p-8 rounded-2xl text-center border-gold/50 flex flex-col items-center">
+                    <img src="https://i.pravatar.cc/150?u=2" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-lg">
+                    <p class="text-xs italic opacity-80 leading-relaxed mb-6">"Puas sekali booking di sini. Respon admin lewat WhatsApp sangat membantu, semua data tiket dijelaskan detail."</p>
+                    <h5 class="text-gold font-bold text-[10px] tracking-widest uppercase">Ibu Siska - Surabaya</h5>
                 </div>
-                <div class="glass-card p-8 rounded-2xl text-center flex flex-col items-center">
-                    <img src="https://i.pravatar.cc/150?u=3" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-xl">
-                    <p class="text-xs italic opacity-80 mb-4">"Pilihan maskapai lengkap. Perjalanan ke luar negeri jadi tenang bersama FlyGo.id."</p>
-                    <h5 class="font-luxury text-gold text-[10px] uppercase">Bpk. Hendra - Bali</h5>
+                <div class="glass p-8 rounded-2xl text-center flex flex-col items-center">
+                    <img src="https://i.pravatar.cc/150?u=3" class="w-16 h-16 rounded-full border-2 border-gold mb-4 shadow-lg">
+                    <p class="text-xs italic opacity-80 leading-relaxed mb-6">"Pilihan maskapai bintang 5-nya lengkap. Perjalanan ke Eropa jadi jauh lebih mudah berkat FlyGo.id."</p>
+                    <h5 class="text-gold font-bold text-[10px] tracking-widest uppercase">Bpk. Hendra - Bali</h5>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="booking" class="py-20 px-6 bg-black">
-        <div class="container mx-auto max-w-4xl">
-            <div class="glass-card p-8 md:p-12 rounded-3xl shadow-2xl">
-                <h3 class="font-luxury text-2xl text-center mb-10 tracking-widest uppercase">RESERVATION <span class="text-gold">FORM</span></h3>
+    <section id="booking" class="py-20 px-6 bg-[#0a0a0a]">
+        <div class="container mx-auto max-w-3xl">
+            <div class="glass p-10 rounded-3xl shadow-2xl">
+                <h3 class="text-center text-2xl font-bold mb-10 tracking-widest uppercase">RESERVATION <span class="text-gold">FORM</span></h3>
                 <form id="bookingForm" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" id="rute_asal" placeholder="Kota Asal" class="w-full p-4 rounded-lg outline-none text-sm" required>
-                        <input type="text" id="rute_tujuan" placeholder="Kota Tujuan" class="w-full p-4 rounded-lg outline-none text-sm" required>
+                        <div>
+                            <label class="text-[10px] text-gold font-bold uppercase ml-1">Kota Asal</label>
+                            <input type="text" id="asal" placeholder="Jakarta (CGK)" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold" required>
+                        </div>
+                        <div>
+                            <label class="text-[10px] text-gold font-bold uppercase ml-1">Kota Tujuan</label>
+                            <input type="text" id="tujuan" placeholder="Tokyo (HND)" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold" required>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 gap-6">
-                        <input type="date" id="tgl_pergi" class="w-full p-4 rounded-lg outline-none text-sm" required>
-                        <input type="date" id="tgl_pulang" class="w-full p-4 rounded-lg outline-none text-sm">
+                        <div>
+                            <label class="text-[10px] text-gold font-bold uppercase ml-1">Tgl Pergi</label>
+                            <input type="date" id="tgl_pergi" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold" required>
+                        </div>
+                        <div>
+                            <label class="text-[10px] text-gold font-bold uppercase ml-1">Tgl Pulang</label>
+                            <input type="date" id="tgl_pulang" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold">
+                        </div>
                     </div>
-                    <input type="text" id="maskapai" placeholder="Maskapai Pilihan" class="w-full p-4 rounded-lg outline-none text-sm" required>
-                    <textarea id="data_penumpang" rows="4" placeholder="Nama Penumpang & Gelar" class="w-full p-4 rounded-lg outline-none text-sm resize-none"></textarea>
-                    <button type="submit" class="gold-button w-full bg-gold text-black font-bold py-5 rounded-xl uppercase tracking-widest text-sm shadow-xl">REQUEST ITINERARY</button>
+                    <div>
+                        <label class="text-[10px] text-gold font-bold uppercase ml-1">Maskapai Pilihan</label>
+                        <input type="text" id="maskapai" placeholder="Contoh: Cathay Pacific" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold" required>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-gold font-bold uppercase ml-1">Nama Penumpang</label>
+                        <textarea id="penumpang" rows="4" placeholder="Contoh: MR. ANDI SUSANTO" class="w-full bg-black/50 border border-gold/30 p-4 rounded-xl text-sm outline-none focus:border-gold resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gold text-black font-bold py-5 rounded-2xl shadow-xl uppercase tracking-widest text-sm hover:scale-[1.02] transition-all">Kirim Data Booking</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 bg-black text-center border-t border-gold/10">
-        <p class="font-luxury text-gold tracking-widest">FLYGO.ID</p>
-        <p class="text-[8px] opacity-40 uppercase mt-2">© 2026 PT FLYGO.ID. All Rights Reserved.</p>
+    <footer class="py-12 bg-black text-center border-t border-gold/10">
+        <p class="font-bold tracking-[0.5em] text-gold mb-4 uppercase">FLYGO.ID</p>
+        <p class="text-[8px] opacity-40 uppercase tracking-widest">&copy; 2026 PT FLYGO.ID. All Rights Reserved.</p>
     </footer>
 
     <script>
+        // Memunculkan kembali 15 Promo
+        const gallery = document.getElementById('gallery');
+        const destinasi = ["Hong Kong", "Tokyo", "London", "Paris", "New York", "Sydney", "Amsterdam", "Vancouver", "Taipei", "Seoul", "Zurich", "Frankfurt", "Milan", "San Francisco", "Dubai"];
+        
+        for (let i = 1; i <= 15; i++) {
+            gallery.innerHTML += `
+                <div class="glass p-4 rounded-2xl flex flex-col group overflow-hidden">
+                    <div class="overflow-hidden rounded-xl mb-6 h-48">
+                        <img src="${i}.jpg" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.parentElement.parentElement.style.display='none'">
+                    </div>
+                    <div class="text-center pb-2">
+                        <h4 class="text-gold font-bold tracking-widest uppercase mb-4">${destinasi[i-1] || 'Special Promo'}</h4>
+                        <div class="space-y-2 text-[10px] border-t border-gold/10 pt-4 opacity-80 uppercase">
+                            <div class="flex justify-between"><span>Ekonomi</span><span class="font-bold">25 KG</span></div>
+                            <div class="flex justify-between text-gold"><span>Business</span><span class="font-bold">40 KG</span></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // WhatsApp Logic
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const teks = `Halo FlyGo.id, saya ingin booking tiket:%0A%0A- Dari: ${document.getElementById('rute_asal').value}%0A- Tujuan: ${document.getElementById('rute_tujuan').value}%0A- Tgl Pergi: ${document.getElementById('tgl_pergi').value}%0A- Maskapai: ${document.getElementById('maskapai').value}%0A- Penumpang: ${document.getElementById('data_penumpang').value}`;
+            const teks = `Halo FlyGo.id, saya ingin booking tiket:%0A%0A- Dari: ${document.getElementById('asal').value}%0A- Tujuan: ${document.getElementById('tujuan').value}%0A- Tgl: ${document.getElementById('tgl_pergi').value}%0A- Maskapai: ${document.getElementById('maskapai').value}%0A- Penumpang: ${document.getElementById('penumpang').value}`;
             window.location.href = `https://wa.me/6282353416376?text=${teks}`;
         });
     </script>
 </body>
-    </html>
+                        </html>
