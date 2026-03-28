@@ -3,131 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyGo.id | Official Premium Travel Fair</title>
+    <title>FlyGo.id | Official Premium Travel</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
-        .font-luxury { font-family: 'Cinzel', serif; }
+        body { font-family: sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
         .text-gold { color: #d4af37; }
         .bg-whatsapp { background-color: #25D366; }
-        .hover-whatsapp:hover { background-color: #128C7E; }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 25px; }
         .sc { font-variant: small-caps; text-transform: lowercase; letter-spacing: 0.1em; }
-        
-        .glass-card { 
-            background: rgba(255, 255, 255, 0.02); 
-            border: 1px solid rgba(212, 175, 55, 0.15); 
-            backdrop-filter: blur(15px);
-            border-radius: 30px;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,1) 100%);
-        }
-
-        input, textarea {
-            background: rgba(255, 255, 255, 0.03) !important;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
-            color: white !important;
-            transition: 0.3s;
-            border-top: 0 !important; border-left: 0 !important; border-right: 0 !important;
-        }
-        input:focus, textarea:focus { border-color: #25D366 !important; outline: none; }
     </style>
 </head>
 <body>
 
-    <nav class="p-6 sticky top-0 z-50 bg-black/95 border-b border-white/5 backdrop-blur-xl">
+    <nav class="p-5 sticky top-0 z-50 bg-black/90 border-b border-white/5">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center space-x-4">
-                <img src="logo.png" alt="Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-gold shadow-[0_0_15px_rgba(212,175,55,0.3)]">
-                <div>
-                    <h1 class="text-lg md:text-xl font-luxury tracking-[0.2em] leading-none">FLYGO<span class="text-gold">.ID</span></h1>
-                    <p class="text-[7px] md:text-[8px] tracking-[0.4em] uppercase opacity-40 mt-1">Premium Travel Partner</p>
-                </div>
-            </div>
-            <a href="https://wa.me/6282353416376" class="bg-whatsapp text-white text-[9px] px-5 py-2.5 rounded-full font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(37,211,102,0.3)] hover-whatsapp transition-all flex items-center">
-                <i class="fab fa-whatsapp mr-2"></i> Daftar Rute
+            <h1 class="text-xl font-bold tracking-widest">FLYGO<span class="text-gold">.ID</span></h1>
+            <a href="https://wa.me/6282353416376" class="bg-whatsapp text-white text-[9px] px-6 py-2.5 rounded-full font-bold uppercase tracking-widest flex items-center shadow-lg">
+                <i class="fab fa-whatsapp mr-2 text-sm"></i> Chat Admin
             </a>
         </div>
     </nav>
 
-    <section class="relative h-[70vh] flex items-center justify-center text-center px-6 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=1920" class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
-        <div class="relative z-10 max-w-4xl">
-            <h2 class="font-luxury text-3xl md:text-6xl mb-6 tracking-[0.2em] leading-tight sc">
-                Booking <span class="text-gold italic font-sans font-light">excellence</span><br>
-                Ticket Online
-            </h2>
-            <div class="h-[1px] w-24 bg-gold mx-auto mb-8 opacity-40"></div>
-            <p class="text-gray-400 font-light tracking-[0.4em] mb-12 text-[9px] md:text-xs uppercase italic">Official Travel Fair Partner 2026</p>
-            <a href="#booking" class="bg-transparent border border-gold text-gold px-12 py-4 rounded-full font-bold uppercase text-[9px] tracking-[0.3em] hover:bg-gold hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(212,175,55,0.1)]">Reservasi Sekarang</a>
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-gold text-xl font-bold mb-8 tracking-[0.3em] sc">#currentflightpromo!!!</h2>
+        <div class="max-w-4xl mx-auto glass p-10">
+            <p class="text-base md:text-xl italic font-light leading-relaxed">
+                "From quick gateway to long-haul adventure, discovery the best flight deals to your favorite destinations, enjoy the best airline promo prices FlyGo.id <strong>BOOK NOW WITH Us</strong>"
+            </p>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-[#030303]">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h3 class="font-luxury text-xl text-gold mb-10 tracking-[0.5em] sc">#currentflightpromo!!!</h3>
-            <div class="glass-card p-10 md:p-16 border-gold/20 shadow-2xl relative">
-                <i class="fas fa-quote-left absolute top-8 left-8 opacity-10 text-4xl text-gold"></i>
-                <p class="text-base md:text-xl font-light leading-relaxed tracking-wide italic text-gray-200">
-                    "From quick gateway to long-haul adventure, discovery the best flight deals to your favorite destinations, enjoy the best airline promo prices FlyGo.id <strong>BOOK NOW WITH Us</strong>"
-                </p>
-                <i class="fas fa-quote-right absolute bottom-8 right-8 opacity-10 text-4xl text-gold"></i>
+    <section class="py-10 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+            
+            <div class="glass p-5 text-center">
+                <img src="1.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Hong+Kong'">
+                <h4 class="text-gold font-bold sc text-lg">Hong Kong</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="2.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Tokyo'">
+                <h4 class="text-gold font-bold sc text-lg">Tokyo</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="3.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=London'">
+                <h4 class="text-gold font-bold sc text-lg">London</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="4.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Paris'">
+                <h4 class="text-gold font-bold sc text-lg">Paris</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="5.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=New+York'">
+                <h4 class="text-gold font-bold sc text-lg">New York</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="6.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Sydney'">
+                <h4 class="text-gold font-bold sc text-lg">Sydney</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="7.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Amsterdam'">
+                <h4 class="text-gold font-bold sc text-lg">Amsterdam</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="8.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Vancouver'">
+                <h4 class="text-gold font-bold sc text-lg">Vancouver</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="9.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Seoul'">
+                <h4 class="text-gold font-bold sc text-lg">Seoul</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="10.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Dubai'">
+                <h4 class="text-gold font-bold sc text-lg">Dubai</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="11.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Milan'">
+                <h4 class="text-gold font-bold sc text-lg">Milan</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
+            </div>
+
+            <div class="glass p-5 text-center">
+                <img src="12.jpg" class="w-full h-48 object-cover rounded-xl mb-5" onerror="this.src='https://via.placeholder.com/400x250?text=Zurich'">
+                <h4 class="text-gold font-bold sc text-lg">Zurich</h4>
+                <p class="text-[10px] opacity-60 mt-3 border-t border-white/5 pt-3 italic">Bagasi 23kg (Eko) / 2x23kg (Biz)</p>
             </div>
         </div>
     </section>
 
-    <section id="booking" class="py-20 px-6 bg-black">
-        <div class="container mx-auto max-w-3xl">
-            <div class="glass-card p-8 md:p-16 shadow-2xl relative border-gold/20">
-                <div class="text-center mb-16">
-                    <h3 class="font-luxury text-2xl mb-4 tracking-[0.3em] sc">Reservation Form</h3>
-                    <div class="h-[1px] w-16 bg-gold mx-auto opacity-30"></div>
-                </div>
-                
-                <form id="bookingForm" class="space-y-12">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <input type="text" id="asal" placeholder="DEPARTURE CITY" class="w-full p-4 text-[10px] tracking-widest uppercase outline-none">
-                        <input type="text" id="tujuan" placeholder="DESTINATION CITY" class="w-full p-4 text-[10px] tracking-widest uppercase outline-none">
-                    </div>
-                    <input type="text" id="maskapai" placeholder="PREFERRED AIRLINE" class="w-full p-4 text-[10px] tracking-widest uppercase outline-none">
-                    <textarea id="penumpang" rows="3" placeholder="PASSENGER NAMES (TITLE)" class="w-full p-4 text-[10px] tracking-widest uppercase resize-none outline-none"></textarea>
-                    
-                    <button type="submit" class="bg-whatsapp text-white w-full py-6 rounded-2xl font-bold uppercase text-[10px] tracking-[0.4em] shadow-[0_0_20px_rgba(37,211,102,0.2)] hover-whatsapp transition-all flex justify-center items-center">
-                        <i class="fab fa-whatsapp mr-3 text-lg"></i> Submit via WhatsApp
-                    </button>
-                </form>
+    <section class="py-20 px-6">
+        <div class="container mx-auto max-w-3xl glass p-8 md:p-12">
+            <h3 class="text-center font-bold text-xl mb-10 tracking-widest uppercase">Reservation Form</h3>
+            <form id="bookingForm" class="space-y-8">
+                <input type="text" id="asal" placeholder="DEPARTURE CITY" class="w-full bg-transparent border-b border-white/10 p-4 text-[10px] outline-none">
+                <input type="text" id="tujuan" placeholder="DESTINATION CITY" class="w-full bg-transparent border-b border-white/10 p-4 text-[10px] outline-none">
+                <textarea id="penumpang" rows="3" placeholder="PASSENGER NAMES" class="w-full bg-transparent border-b border-white/10 p-4 text-[10px] outline-none resize-none"></textarea>
+                <button type="submit" class="bg-whatsapp text-white w-full py-5 rounded-2xl font-bold uppercase text-[10px] flex justify-center items-center shadow-lg">
+                    <i class="fab fa-whatsapp mr-3 text-lg"></i> Submit via WhatsApp
+                </button>
+            </form>
 
-                <div class="mt-16 pt-10 border-t border-white/5 text-center">
-                    <p class="text-gold font-bold italic text-[9px] tracking-widest mb-6 uppercase sc">- Conditions & Payment -</p>
-                    <p class="text-[11px] leading-relaxed text-gray-400 italic px-4">
-                        Payment via bank transfer <strong>PT FlyGo.Id & Travel Fest</strong> sesuai harga promo & discount yang berlaku. Harap cek kode booking Anda di web Maskapai sebelum melakukan pembayaran demi keamanan transaksi.
-                    </p>
-                </div>
+            <div class="mt-12 text-center border-t border-white/5 pt-8">
+                <p class="text-gold font-bold text-[10px] mb-4 uppercase">Payment via bank transfer PT FlyGo.Id & Travel</p>
+                <p class="text-[9px] opacity-40 italic">Harap cek tiket & kode booking Anda sebelum melakukan pembayaran.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-16 bg-black text-center opacity-40">
-        <h4 class="font-luxury text-lg tracking-[0.8em] text-gold mb-6 uppercase">FlyGo.id</h4>
-        <p class="text-[7px] uppercase tracking-[0.5em] font-light italic">&copy; 2026 PT FlyGo Indonesia. All Rights Reserved.</p>
+    <footer class="py-10 text-center opacity-30 text-[8px] tracking-[0.5em]">
+        &copy; 2026 PT FLYGO INDONESIA. ALL RIGHTS RESERVED.
     </footer>
 
     <script>
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const teks = `Halo FlyGo.id, saya ingin reservasi tiket:%0A%0A` +
-                         `- Dari: ${document.getElementById('asal').value}%0A` +
-                         `- Tujuan: ${document.getElementById('tujuan').value}%0A` +
-                         `- Maskapai: ${document.getElementById('maskapai').value}%0A%0A` +
-                         `- Penumpang: ${document.getElementById('penumpang').value}`;
+            const teks = `Halo FlyGo.id, saya ingin reservasi tiket:%0A- Dari: ${document.getElementById('asal').value}%0A- Tujuan: ${document.getElementById('tujuan').value}%0A- Penumpang: ${document.getElementById('penumpang').value}`;
             window.location.href = `https://wa.me/6282353416376?text=${teks}`;
         });
     </script>
 </body>
-                            </html>
+                    </html>
