@@ -6,50 +6,112 @@
     <title>Daftar Rute Lengkap | FlyGo.id</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; background-color: #050505; color: #ffffff; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #030712; /* Navy Deep */
+            color: #ffffff; 
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
         .text-gold { color: #d4af37; }
-        .glass-table { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 20px; overflow: hidden; margin-bottom: 30px; }
-        table { width: 100%; text-align: left; }
-        th { color: #d4af37; padding: 15px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); text-transform: uppercase; font-size: 10px; }
-        td { padding: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.03); font-size: 11px; }
+        .bg-gold-gradient { background: linear-gradient(45deg, #af8917, #d4af37, #f9e38e); }
+        .glass-table { 
+            background: rgba(255, 255, 255, 0.02); 
+            border: 1px solid rgba(212, 175, 55, 0.15); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th { 
+            color: #d4af37; 
+            padding: 20px 15px; 
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2); 
+            text-transform: uppercase; 
+            font-size: 11px;
+            letter-spacing: 0.1em;
+        }
+        td { 
+            padding: 18px 15px; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03); 
+            font-size: 13px; 
+            font-weight: 300;
+        }
+        tr:hover { background: rgba(212, 175, 55, 0.03); }
+        .sc { font-variant: small-caps; letter-spacing: 0.2em; }
     </style>
 </head>
-<body class="p-6">
-    <nav class="mb-10 flex justify-between items-center max-w-4xl mx-auto">
-        <a href="index.html" class="text-gold font-bold uppercase text-[10px]"><i class="fas fa-arrow-left mr-2"></i> Home</a>
-        <h1 class="text-xl font-bold tracking-widest">FLYGO<span class="text-gold">.ID</span></h1>
+<body class="p-6 md:p-12">
+    <nav class="mb-16 flex justify-between items-center max-w-5xl mx-auto">
+        <a href="index.html" class="text-gold font-bold uppercase text-[11px] tracking-widest hover:opacity-70 transition">
+            <i class="fas fa-arrow-left mr-2 text-xs"></i> Kembali ke Home
+        </a>
+        <h1 class="text-2xl font-serif font-bold tracking-widest text-white">FLYGO<span class="text-gold">.ID</span></h1>
     </nav>
 
-    <div class="max-w-4xl mx-auto">
-        <h2 class="text-center text-gold text-2xl font-bold mb-12 tracking-widest uppercase">Flight Routes List</h2>
+    <div class="max-w-5xl mx-auto">
+        <header class="text-center mb-16">
+            <p class="text-gold text-xs font-bold tracking-[0.5em] mb-4 uppercase">Exclusive Travel Offers</p>
+            <h2 class="text-4xl font-serif font-bold mb-4">Flight Routes List</h2>
+            <div class="w-20 h-1 bg-gold-gradient mx-auto"></div>
+        </header>
 
         <div class="glass-table">
-            <div class="bg-white/5 p-4 text-center text-gold font-bold uppercase tracking-widest">Rute Asia</div>
-            <table>
-                <thead><tr><th>Destinasi (PP)</th><th class="text-center">Ekonomi</th><th class="text-center">Business</th></tr></thead>
-                <tbody>
-                    <tr><td>Jakarta - Hong Kong</td><td class="text-center">4.2jt</td><td class="text-center text-gold font-bold">12.5jt</td></tr>
-                    <tr><td>Jakarta - Tokyo</td><td class="text-center">6.8jt</td><td class="text-center text-gold font-bold">18.2jt</td></tr>
-                    <tr><td>Jakarta - Seoul</td><td class="text-center">5.9jt</td><td class="text-center text-gold font-bold">16.5jt</td></tr>
-                </tbody>
-            </table>
+            <div class="bg-white/5 p-5 text-center text-gold font-bold uppercase tracking-[0.3em] text-xs">Rute Asia</div>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destinasi (Pulang Pergi)</th>
+                            <th class="text-center">Economy Class</th>
+                            <th class="text-center">Business Class</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jakarta - Hong Kong</td><td class="text-center text-gray-400">4.2jt</td><td class="text-center text-gold font-bold">12.5jt</td></tr>
+                        <tr><td>Jakarta - Tokyo</td><td class="text-center text-gray-400">6.8jt</td><td class="text-center text-gold font-bold">18.2jt</td></tr>
+                        <tr><td>Jakarta - Seoul</td><td class="text-center text-gray-400">5.9jt</td><td class="text-center text-gold font-bold">16.5jt</td></tr>
+                        <tr><td>Jakarta - Singapore</td><td class="text-center text-gray-400">2.1jt</td><td class="text-center text-gold font-bold">7.5jt</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="glass-table">
-            <div class="bg-white/5 p-4 text-center text-gold font-bold uppercase tracking-widest">Rute Eropa</div>
-            <table>
-                <thead><tr><th>Destinasi (PP)</th><th class="text-center">Ekonomi</th><th class="text-center">Business</th></tr></thead>
-                <tbody>
-                    <tr><td>Jakarta - London</td><td class="text-center">11.5jt</td><td class="text-center text-gold font-bold">32.8jt</td></tr>
-                    <tr><td>Jakarta - Paris</td><td class="text-center">10.9jt</td><td class="text-center text-gold font-bold">31.5jt</td></tr>
-                    <tr><td>Jakarta - Milan</td><td class="text-center">10.2jt</td><td class="text-center text-gold font-bold">29.5jt</td></tr>
-                    <tr><td>Jakarta - Istanbul</td><td class="text-center">8.9jt</td><td class="text-center text-gold font-bold">25.5jt</td></tr>
-                </tbody>
-            </table>
+            <div class="bg-white/5 p-5 text-center text-gold font-bold uppercase tracking-[0.3em] text-xs">Rute Eropa & Timur Tengah</div>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destinasi (Pulang Pergi)</th>
+                            <th class="text-center">Economy Class</th>
+                            <th class="text-center">Business Class</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jakarta - London</td><td class="text-center text-gray-400">11.5jt</td><td class="text-center text-gold font-bold">32.8jt</td></tr>
+                        <tr><td>Jakarta - Paris</td><td class="text-center text-gray-400">10.9jt</td><td class="text-center text-gold font-bold">31.5jt</td></tr>
+                        <tr><td>Jakarta - Istanbul</td><td class="text-center text-gray-400">8.9jt</td><td class="text-center text-gold font-bold">25.5jt</td></tr>
+                        <tr><td>Jakarta - Milan</td><td class="text-center text-gray-400">10.2jt</td><td class="text-center text-gold font-bold">29.5jt</td></tr>
+                        <tr><td>Jakarta - Dubai</td><td class="text-center text-gray-400">8.5jt</td><td class="text-center text-gold font-bold">24.2jt</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <a href="https://wa.me/6282353416376" class="block w-full bg-[#25D366] text-center text-white py-5 rounded-2xl font-bold uppercase text-xs">Hubungi Admin Untuk Rute Lainnya</a>
+        <div class="text-center mt-12 mb-20">
+            <p class="text-[11px] opacity-50 uppercase tracking-widest mb-6">Butuh rute atau jadwal lainnya?</p>
+            <a href="https://wa.me/6282353416376" class="inline-flex items-center bg-gold-gradient text-black px-10 py-5 rounded-2xl font-bold uppercase text-xs tracking-[0.2em] shadow-2xl hover:scale-105 transition transform">
+                <i class="fab fa-whatsapp mr-3 text-xl"></i> Konsultasi via WhatsApp Expert
+            </a>
+            <p class="mt-8 text-[10px] text-gold font-bold uppercase tracking-widest">Official Bank Transfer: PT FlyGo.Id & Travel</p>
+        </div>
     </div>
+
+    <footer class="py-10 text-center border-t border-white/5 opacity-40">
+        <p class="text-[10px] uppercase tracking-widest">&copy; 2026 FlyGo.id - Premium Travel Management</p>
+    </footer>
 </body>
-    </html>
+                                </html>
