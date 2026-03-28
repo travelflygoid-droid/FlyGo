@@ -36,10 +36,10 @@
 
     <nav class="p-5 sticky top-0 z-50 bg-[#030712]/95 border-b border-white/5 backdrop-blur-md">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl font-serif font-bold tracking-widest text-white">FLYGO<span class="text-gold">.ID</span></h1>
+            <h1 class="text-2xl font-serif font-bold tracking-widest text-white uppercase">FLYGO<span class="text-gold">.ID</span></h1>
             <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-widest font-semibold">
                 <a href="#" class="hover:text-gold transition">Home</a>
-                <a href="#promo" class="hover:text-gold transition">Promo</a>
+                <a href="promo.html" class="hover:text-gold transition text-gold font-bold">Promo</a>
                 <a href="#booking" class="hover:text-gold transition">Reservation</a>
             </div>
             <a href="https://wa.me/6282353416376?text=Halo%20FlyGo.id%2C%20saya%20butuh%20bantuan%20expert%20untuk%20rencana%20perjalanan." target="_blank" class="bg-gold-gradient text-navy-950 text-[10px] px-6 py-2.5 rounded-full font-bold uppercase tracking-widest flex items-center shadow-lg hover:scale-105 transition transform text-black">
@@ -56,50 +56,43 @@
                 "Urusan travel jadi lebih mudah bersama FlyGo.id. Temukan penawaran eksklusif ke destinasi favorit Anda dengan layanan kelas dunia."
             </p>
         </div>
-        <a href="https://wa.me/6282353416376?text=Halo%20FlyGo.id%2C%20saya%20ingin%20booking%20penerbangan%20sekarang." target="_blank" class="mt-10 border-b-2 border-gold text-gold py-2 uppercase tracking-[0.3em] text-xs font-bold hover:opacity-70 transition">Book Your Flight Now</a>
+        <a href="#booking" class="mt-10 border-b-2 border-gold text-gold py-2 uppercase tracking-[0.3em] text-xs font-bold hover:opacity-70 transition">Book Your Flight Now</a>
     </section>
 
     <section id="promo" class="py-20 px-6 bg-[#030712]">
-        <div class="container mx-auto max-w-6xl">
-            <h3 class="text-center font-serif text-3xl mb-12 text-gold">Destinasi Pilihan Bulan Ini</h3>
+        <div class="container mx-auto max-w-6xl text-center">
+            <h3 class="font-serif text-3xl mb-4 text-gold">Destinasi Pilihan Bulan Ini</h3>
+            <p class="text-xs opacity-50 uppercase tracking-widest mb-12">Dapatkan Harga Spesial Khusus Pemesanan Hari Ini</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="glass overflow-hidden group">
                     <div class="h-64 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-gold font-bold sc text-xl">London</h4>
-                        <p class="text-[10px] opacity-50 mt-2 uppercase tracking-widest">Mulai dari Penawaran Terbaik</p>
-                        <div class="mt-4 border-t border-white/5 pt-4">
-                            <span class="text-xs font-semibold px-3 py-1 bg-white/5 rounded-full">Premium Service</span>
-                        </div>
+                    <div class="p-6">
+                        <h4 class="text-gold font-bold sc text-xl uppercase">London</h4>
+                        <div class="mt-4 border-t border-white/5 pt-4 text-[10px] uppercase tracking-widest opacity-60">Premium Service</div>
                     </div>
                 </div>
                 <div class="glass overflow-hidden group">
                     <div class="h-64 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-gold font-bold sc text-xl">Tokyo</h4>
-                        <p class="text-[10px] opacity-50 mt-2 uppercase tracking-widest">Modernitas & Tradisi</p>
-                        <div class="mt-4 border-t border-white/5 pt-4">
-                            <span class="text-xs font-semibold px-3 py-1 bg-white/5 rounded-full">Exclusive Deals</span>
-                        </div>
+                    <div class="p-6">
+                        <h4 class="text-gold font-bold sc text-xl uppercase">Tokyo</h4>
+                        <div class="mt-4 border-t border-white/5 pt-4 text-[10px] uppercase tracking-widest opacity-60">Modernitas & Tradisi</div>
                     </div>
                 </div>
                 <div class="glass overflow-hidden group">
                     <div class="h-64 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h4 class="text-gold font-bold sc text-xl">Hong Kong</h4>
-                        <p class="text-[10px] opacity-50 mt-2 uppercase tracking-widest">Pusat Bisnis & Wisata</p>
-                        <div class="mt-4 border-t border-white/5 pt-4">
-                            <span class="text-xs font-semibold px-3 py-1 bg-white/5 rounded-full">Best Price</span>
-                        </div>
+                    <div class="p-6">
+                        <h4 class="text-gold font-bold sc text-xl uppercase">Hong Kong</h4>
+                        <div class="mt-4 border-t border-white/5 pt-4 text-[10px] uppercase tracking-widest opacity-60">Best Business Price</div>
                     </div>
                 </div>
             </div>
+            <a href="promo.html" class="inline-block mt-12 bg-white/5 border border-gold/30 px-8 py-3 rounded-full text-[10px] uppercase tracking-widest hover:bg-gold-gradient hover:text-black transition">Lihat Semua Rute & Harga</a>
         </div>
     </section>
 
@@ -109,7 +102,7 @@
                 <i class="fas fa-plane-departure text-9xl text-gold"></i>
             </div>
             
-            <h3 class="text-center font-serif text-3xl mb-4 text-white">Formulir Reservasi</h3>
+            <h3 class="text-center font-serif text-3xl mb-4 text-white uppercase">Formulir Reservasi</h3>
             <p class="text-center text-gold text-xs tracking-widest uppercase mb-12">Luxury Travel Consultancy</p>
             
             <form id="bookingForm" class="space-y-10">
@@ -148,7 +141,7 @@
             const tujuan = document.getElementById('tujuan').value;
             const penumpang = document.getElementById('penumpang').value;
             
-            // Nomor WhatsApp Baru Anda
+            // Nomor WhatsApp Anda
             const noWA = "6282353416376"; 
             
             const pesan = `Halo FlyGo.id, saya ingin reservasi tiket:%0A%0A` +
@@ -161,4 +154,4 @@
         });
     </script>
 </body>
-    </html>
+                            </html>
